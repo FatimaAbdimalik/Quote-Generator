@@ -31,7 +31,7 @@ const Quotes = () => {
   } else {
     return (
       <div>
-        <h2>
+        <h2 className="quote-style">
           {" "}
           {nextQuote
             ? `"${nextQuote.quote}"`
