@@ -23,14 +23,13 @@ const Quotes = () => {
 
   if (!quote) {
     return (
-      <div>
+      <div style={{ marginTop: "12rem", marginLeft: "12rem" }}>
         <Loader type="Bars" color="#00BFFF" height={80} width={80} />{" "}
       </div>
     );
   } else {
     return (
       <div>
-        <h1>Quote Generator</h1>
         <div> {nextQuote ? nextQuote.quote : pickRandomQuote(quote).quote}</div>
         <div>
           {nextQuote ? nextQuote.author : pickRandomQuote(quote).author}

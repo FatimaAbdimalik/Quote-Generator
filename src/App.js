@@ -4,7 +4,8 @@ import Quotes from "./Quotes";
 
 function App() {
   return (
-    <div>
+    <div className="App">
+      <h1>Quote Generator</h1>
       <Quotes />
     </div>
   );
