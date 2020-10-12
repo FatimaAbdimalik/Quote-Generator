@@ -31,15 +31,13 @@ const Quotes = () => {
   } else {
     return (
       <div>
-        <div>
+        <h2>
           {" "}
           {nextQuote
             ? `"${nextQuote.quote}"`
             : `"${pickRandomQuote(quote).quote}"`}
-        </div>
-        <div>
-          {nextQuote ? nextQuote.author : pickRandomQuote(quote).author}
-        </div>
+        </h2>
+        <h4>{nextQuote ? nextQuote.author : pickRandomQuote(quote).author}</h4>
         <div className="button">
           <button onClick={chooseNextQuote}>Next Quote</button>
         </div>
