@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./Quotes.css";
 import Loader from "react-loader-spinner";
 
 const Quotes = () => {
@@ -23,18 +24,25 @@ const Quotes = () => {
 
   if (!quote) {
     return (
-      <div style={{ marginTop: "12rem", marginLeft: "12rem" }}>
+      <div style={{ marginTop: "3rem", marginLeft: "2.5rem" }}>
         <Loader type="Bars" color="#00BFFF" height={80} width={80} />{" "}
       </div>
     );
   } else {
     return (
       <div>
-        <div> {nextQuote ? nextQuote.quote : pickRandomQuote(quote).quote}</div>
+        <div>
+          {" "}
+          {nextQuote
+            ? `"${nextQuote.quote}"`
+            : `"${pickRandomQuote(quote).quote}"`}
+        </div>
         <div>
           {nextQuote ? nextQuote.author : pickRandomQuote(quote).author}
         </div>
-        <button onClick={chooseNextQuote}>Next Quote</button>
+        <div className="button">
+          <button onClick={chooseNextQuote}>Next Quote</button>
+        </div>
       </div>
     );
   }
