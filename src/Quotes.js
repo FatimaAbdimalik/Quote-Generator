@@ -38,8 +38,10 @@ const Quotes = () => {
             : `"${pickRandomQuote(quote).quote}"`}
         </h2>
         <h4>{nextQuote ? nextQuote.author : pickRandomQuote(quote).author}</h4>
-        <div className="button">
-          <button onClick={chooseNextQuote}>Next Quote</button>
+        <div>
+          <button className="button" onClick={chooseNextQuote}>
+            Next Quote
+          </button>
         </div>
       </div>
     );

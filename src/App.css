@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+#root {
+  background-image: url("https://cdn.hipwallpaper.com/i/84/49/GzS7hc.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
