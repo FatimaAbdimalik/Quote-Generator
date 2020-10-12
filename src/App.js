@@ -6,6 +6,7 @@ import Loader from "react-loader-spinner";
 
 function App() {
   const [quote, setQuote] = useState();
+  const [nextQuote, setNextQuote] = useState();
   console.log(quote);
   useEffect(() => {
     fetch("https://fatima-node1-quote.glitch.me/quotes")
@@ -19,6 +20,10 @@ function App() {
     return arr[Math.floor(Math.random() * arr.length)];
   };
 
+  const chooseNextQuote = () => {
+    return setNextQuote(pickRandomQuote(quote));
+  };
+
   if (!quote) {
     return (
       <div>
@@ -28,8 +33,12 @@ function App() {
   } else {
     return (
       <div>
-        <div>"{pickRandomQuote(quote).quote}"</div>
-        <div>{pickRandomQuote(quote).author}</div>
+        <h1>Quote Generator</h1>
+        <div> {nextQuote ? nextQuote.quote : pickRandomQuote(quote).quote}</div>
+        <div>
+          {nextQuote ? nextQuote.author : pickRandomQuote(quote).author}
+        </div>
+        <button onClick={chooseNextQuote}>Next Quote</button>
       </div>
     );
   }
