@@ -31,6 +31,7 @@ const Quotes = () => {
   } else {
     return (
       <div>
+        <h1 className="title">Quote Generator</h1>
         <h2 className="quote-style">
           {" "}
           {nextQuote
@@ -40,7 +41,7 @@ const Quotes = () => {
         <h4>{nextQuote ? nextQuote.author : pickRandomQuote(quote).author}</h4>
         <div>
           <button className="button" onClick={chooseNextQuote}>
-            Next Quote
+            <span> Next Quote</span>
           </button>
         </div>
       </div>

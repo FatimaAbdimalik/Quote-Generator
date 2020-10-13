@@ -38,7 +38,15 @@
 }
 #root {
   background-image: url("https://cdn.hipwallpaper.com/i/84/49/GzS7hc.jpg");
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  min-width: 100%;
+  min-height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+}
+.title {
 }
