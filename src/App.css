@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap");
+
 .App {
   text-align: center;
 }
@@ -41,7 +43,6 @@
   position: fixed;
   top: 0;
   left: 0;
-
   min-width: 100%;
   min-height: 100%;
   background-size: cover;
@@ -49,4 +50,7 @@
   height: 100vh;
 }
 .title {
+  margin-top: 15rem;
+  font-family: "Sansita Swashed", cursive;
+  color: silver;
 }

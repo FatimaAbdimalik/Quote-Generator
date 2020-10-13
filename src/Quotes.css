@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap");
 .button {
   margin-top: 1rem;
   background-color: #0d0c5d;
@@ -7,9 +8,25 @@
   cursor: pointer;
 }
 
+/* h2 {
+  font-size: 10px;
+  font-size: 10px;
+  position: relative;
+  animation: mymove 5s;
+}
+@keyframes mymove {
+  0% {
+    top: 0px;
+    font-size: 10px;
+  }
+  100% {
+    top: 200px;
+    font-size: 20px;
+  }
+} */
 .quote-style {
   color: white;
-  margin-top: 15rem;
+  font-family: "Sansita Swashed", cursive;
 }
 
 .button span {
