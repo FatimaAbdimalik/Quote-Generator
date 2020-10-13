@@ -24,8 +24,8 @@ const Quotes = () => {
 
   if (!quote) {
     return (
-      <div style={{ marginTop: "3rem", marginLeft: "2.5rem" }}>
-        <Loader type="Bars" color="#00BFFF" height={80} width={80} />{" "}
+      <div style={{ marginTop: "15rem", marginLeft: "2rem" }}>
+        <Loader type="Bars" color="#FFFFFF" height={80} width={80} />{" "}
       </div>
     );
   } else {
